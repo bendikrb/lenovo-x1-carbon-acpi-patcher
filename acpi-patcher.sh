@@ -17,7 +17,7 @@ fi
 
 
 if [ ! -d "$wdir" ]; then
-    mkdir $wdir || echo "Unable to create working directory"; exit 1
+	mkdir $wdir || (echo "Unable to create working directory"; exit 1)
 fi
 
 if [ -f "$patch_fname" ]; then
